@@ -1,0 +1,118 @@
+.faq{
+    padding:80px 0;
+    h3{
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 26px;
+        color: #292b2c;
+        font-family: $font-roboto;
+        line-height: 1.2;
+        margin-bottom:48px;
+    }
+    .faq-left{
+        color: #687188;
+        font-family: $font-poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        .card{
+            border:none;
+            margin-bottom:15px;
+            .card-header{
+                position:relative;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #292b2c;
+                font-family: $font-roboto;
+                text-transform: lowercase;
+                background-color: transparent;
+                padding:0;
+                padding-bottom:15px;
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+                a{
+                    padding-right:80px;
+                    line-height: normal;
+                    display:block;
+                }
+                a:hover {
+                    color: #FF324D;
+                }
+                ion-icon{
+                    position: absolute;
+                    right: 15px;
+                    top: 0;
+                    font-family: "Ionicons";
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .card-body{
+                display:none;
+                padding: 15px 0 10px;
+                p{
+                    color: #687188;
+                    line-height: 28px;
+                    font-family: $font-poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .faq-right{
+        color: #687188;
+        font-family: $font-poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        .card{
+            border:none;
+            margin-bottom:15px;
+            .card-header{
+                position:relative;
+                font-weight: 500;
+                line-height: 1.2;
+                color: #292b2c;
+                font-family: $font-roboto;
+                text-transform: lowercase;
+                background-color: transparent;
+                padding:0;
+                padding-bottom:15px;
+                &::first-letter{
+                    text-transform: uppercase;
+                }
+                a{
+                    padding-right:80px;
+                    line-height: normal;
+                    
+                }
+                a:hover {
+                    color: #FF324D;
+                }
+                ion-icon{
+                    position: absolute;
+                    right: 15px;
+                    top: 0;
+                    font-family: "Ionicons";
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .card-body{
+                display:none;
+                padding: 15px 0 10px;
+                p{
+                    color: #687188;
+                    line-height: 28px;
+                    font-family: $font-poppins;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

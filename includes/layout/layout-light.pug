@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title LOGISTIC SHOP
+    //- Logo Icon
+    link(rel="shortcut icon" type="image/x-icon" href="")
+    //- Fonts Google
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet")
+    //- Font Awesome 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    //- Style CSS
+    link(rel="stylesheet",href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css",integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==",crossorigin="anonymous")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/themify-icons/themify-icons.css")
+    link(rel="stylesheet" type="text/css" href="./assets/css/ionicons.css")
+  body
+    .wrapper
+      include ./header-light.pug
+      block pages
+      include ./footer-light.pug
+
+    //-Ionicons
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    //- jQuery
+    <script src="./assets/js/jquery.min.js"></script>
+    //- Owl Carousel
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    //- Java Script
+    script(src="./assets/js/main.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+

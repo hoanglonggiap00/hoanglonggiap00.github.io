@@ -1,0 +1,28 @@
+.team-member{
+    padding-bottom: 70px;
+
+    .heading-team-member{
+        justify-content: center;
+        display: flex;
+
+        .team-member-heading{
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2rem;
+            color:#292b2c;
+        }
+
+        .content-heading{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+
+    .member-box{
+        margin-bottom: 30px;
+
+        .member-content{
+            padding-top: 15px;
+        }
+    }
+}

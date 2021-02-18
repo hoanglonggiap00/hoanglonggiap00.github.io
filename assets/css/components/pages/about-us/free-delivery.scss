@@ -1,0 +1,29 @@
+.free-delivery{
+    text-align: center;
+    .icon_box{
+        margin-bottom: 30px;
+        .icon_box_style1{
+            text-align: center;
+            position: relative;
+        } 
+    }
+    .icon img{
+        width: 46px;
+    }
+    .icon_box_content{
+        margin-top: 15px;
+        padding-right: 10px;
+        
+       
+    }
+    .icon_box_style1::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 15%;
+        bottom: 15%;
+        width: 1px;
+        background-color: #ddd;
+    }
+    
+}
