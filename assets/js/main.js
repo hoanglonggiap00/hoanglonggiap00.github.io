@@ -204,3 +204,31 @@ const category = {
     }
   },
 };
+
+/* ============================= Show Modal When Load The Page  ============================= */
+  
+// Get the popup div
+  var popup = document.getElementById("my-modal");
+  $(window).on('load',function(){
+    // popup.style.display = "block";
+    $("#my-modal").show();
+    $('body').css("overflow-y","hidden");
+
+  });
+// Click x button will close modal
+  $("#close-btn").click(function () {
+    $("#my-modal").hide();
+    $('body').css("overflow-y","");
+  });
+
+// Click outside modal will close modal 
+  $(window).click(function(e){
+    if($(e.target).hasClass("outside-modal")||$(e.target).hasClass("page-modal")){
+      $("#my-modal").hide();
+      $('body').css("overflow-y","");
+    }
+  })
+  
+  
+  
+  

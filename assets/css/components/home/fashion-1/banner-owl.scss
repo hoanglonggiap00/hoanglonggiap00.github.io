@@ -1,5 +1,36 @@
 .carousel-fade{
 
+    .carousel-indicators{
+        li{
+            width: 10px;
+            height: 10px;
+            background-color: $color-secondary;
+            border: 0;
+            margin: 8px;
+            position: relative;
+
+            &.active{
+                background-color: $color-loginBtn;
+
+                &::before{
+                    border: 2px solid $color-loginBtn;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                border: 2px solid $color-secondary;
+                margin: -4px;
+            }
+
+        }
+    }
+    
     .carousel-item{
 
         height: 500px;

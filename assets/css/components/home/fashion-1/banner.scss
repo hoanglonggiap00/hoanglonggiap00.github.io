@@ -31,10 +31,32 @@
             -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             width: 50%;
+
+            // RESPONSIVE
+            @include breakpoint(991) {
+                width: 55%;
+                padding: 15px;
+            }
+
             
             &-title {
                 font-weight: bold;
                 font-size: 2rem;
+
+                // RESPONSIVE
+                @include breakpoint(991) {
+                    font-size: 22px;
+                }
+            }
+
+            &-title1 {
+
+                font-size: 1.5rem;
+
+                // RESPONSIVE
+                @include breakpoint(991) {
+                    font-size: 1.125rem;
+                }
             }
     
             &-link {

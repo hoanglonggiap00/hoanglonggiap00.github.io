@@ -18,7 +18,12 @@ p {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #292b2c;
   font-family: "Roboto"; }
 
@@ -2892,6 +2897,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 1px;
   background-color: #ededed; }
 
+.carousel-fade .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: #292b2c;
+  border: 0;
+  margin: 8px;
+  position: relative; }
+  .carousel-fade .carousel-indicators li.active {
+    background-color: #ff324d; }
+    .carousel-fade .carousel-indicators li.active::before {
+      border: 2px solid #ff324d; }
+  .carousel-fade .carousel-indicators li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: 2px solid #292b2c;
+    margin: -4px; }
+
 .carousel-fade .carousel-item {
   height: 500px; }
   .carousel-fade .carousel-item.background_bg {
@@ -3028,9 +3054,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       width: 50%; }
+      @media only screen and (max-width: 991px) {
+        .banner-section-2 .single-banner-info {
+          width: 55%;
+          padding: 15px; } }
       .banner-section-2 .single-banner-info-title {
         font-weight: bold;
         font-size: 2rem; }
+        @media only screen and (max-width: 991px) {
+          .banner-section-2 .single-banner-info-title {
+            font-size: 22px; } }
+      .banner-section-2 .single-banner-info-title1 {
+        font-size: 1.5rem; }
+        @media only screen and (max-width: 991px) {
+          .banner-section-2 .single-banner-info-title1 {
+            font-size: 1.125rem; } }
       .banner-section-2 .single-banner-info-link {
         position: relative;
         color: #292b2c; }
@@ -3136,6 +3174,223 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         color: #FF324D; }
         .best-summer-collection .summer-collection-content .content-main .summer-collection-text .btn-shop:hover::before, .best-summer-collection .summer-collection-content .content-main .summer-collection-text .btn-shop:hover::after {
           width: 51%; }
+
+.page-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media only screen and (max-width: 991px) {
+    .page-modal .outside-modal {
+      padding: 0; } }
+  @media only screen and (max-width: 767px) {
+    .page-modal .outside-modal {
+      margin: 0;
+      max-width: 728px;
+      height: 303px; } }
+  .page-modal .outside-modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 991px) {
+      .page-modal .outside-modal .modal-dialog {
+        max-width: 700px;
+        height: 345px;
+        margin: 28px 10px; } }
+    @media only screen and (max-width: 767px) {
+      .page-modal .outside-modal .modal-dialog {
+        max-width: 728px;
+        height: 303px;
+        margin: 0; } }
+    .page-modal .outside-modal .modal-dialog .modal-content {
+      border: none;
+      border-radius: 0;
+      height: 389px; }
+      @media only screen and (max-width: 991px) {
+        .page-modal .outside-modal .modal-dialog .modal-content {
+          width: 700px;
+          height: 345px; } }
+      @media only screen and (max-width: 767px) {
+        .page-modal .outside-modal .modal-dialog .modal-content {
+          width: 100%;
+          height: 303px; } }
+      @media only screen and (max-width: 575px) {
+        .page-modal .outside-modal .modal-dialog .modal-content {
+          max-height: 268px;
+          width: 559px; } }
+      .page-modal .outside-modal .modal-dialog .modal-content button.close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: black;
+        font-size: 40px;
+        opacity: 1;
+        z-index: 9;
+        text-shadow: none;
+        width: 40px;
+        height: 40px; }
+        .page-modal .outside-modal .modal-dialog .modal-content button.close:focus {
+          outline: none; }
+      .page-modal .outside-modal .modal-dialog .modal-content .modal-body {
+        height: 100%;
+        padding: 0;
+        margin: 0; }
+        .page-modal .outside-modal .modal-dialog .modal-content .modal-body .background-div {
+          padding: 0;
+          height: 100%;
+          width: 100%; }
+          @media only screen and (max-width: 575px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .background-div {
+              display: none; } }
+          .page-modal .outside-modal .modal-dialog .modal-content .modal-body .background-div .background-img {
+            background-image: url("../../assets/images/home/fashion-1/page-modal/popup_img.jpg");
+            background-position: center center;
+            background-size: cover;
+            height: 100%;
+            width: 100%; }
+        .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text {
+          height: 100%;
+          padding: 50px; }
+          @media only screen and (max-width: 991px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text {
+              padding: 0; } }
+          @media only screen and (max-width: 767px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text {
+              display: flex;
+              justify-content: center;
+              align-items: center; } }
+          @media only screen and (max-width: 991px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content {
+              padding: 30px; } }
+          @media only screen and (max-width: 767px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content {
+              width: 375px;
+              padding: 0;
+              height: 253px; } }
+          @media only screen and (max-width: 575px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content {
+              padding: 25px;
+              width: 100%;
+              height: 100%;
+              position: relative; } }
+          .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .heading h4 {
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            margin: 0;
+            text-transform: capitalize;
+            line-height: normal; }
+            @media only screen and (max-width: 767px) {
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .heading h4 {
+                font-size: 20px; } }
+          .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .heading p {
+            margin: 25px 0;
+            text-align: center;
+            color: #687188;
+            line-height: 28px; }
+            @media only screen and (max-width: 767px) {
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .heading p {
+                font-weight: 400;
+                font-size: 14px;
+                margin: 15px 0;
+                line-height: normal; } }
+            @media only screen and (max-width: 575px) {
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .heading p {
+                margin: 13px 0; } }
+          @media only screen and (max-width: 575px) {
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form {
+              height: 103px; } }
+          .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group {
+            margin-bottom: 16px; }
+            @media only screen and (max-width: 575px) {
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group {
+                height: 44px;
+                margin-bottom: 19px; } }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group .form-control {
+              color: #000;
+              box-shadow: none;
+              height: 50px;
+              padding: 8px 15px;
+              border-radius: 0; }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button {
+              border-radius: 0;
+              text-transform: capitalize;
+              font-family: "Poppins";
+              font-weight: 300;
+              font-size: 16px;
+              padding: 12px 35px;
+              border: 1px solid #333;
+              text-decoration: none;
+              color: white;
+              display: inline-block;
+              background-color: #333;
+              position: relative;
+              overflow: hidden;
+              z-index: 1; }
+              @media only screen and (max-width: 575px) {
+                .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button {
+                  font-size: 14px; } }
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button::before, .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button::after {
+                width: 0;
+                content: "";
+                position: absolute;
+                background-color: white;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: all .4s ease-in-out; }
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button::before {
+                left: 50%;
+                right: auto; }
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button::after {
+                right: 50%;
+                left: auto; }
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button:hover {
+                color: #333; }
+                .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button:hover::before, .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .form .popup-form .form-group button:hover::after {
+                  width: 51%; }
+          .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form {
+            text-align: center; }
+            @media only screen and (max-width: 575px) {
+              .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form {
+                position: absolute;
+                bottom: 25px;
+                left: 25%; } }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form input[type="checkbox"] {
+              visibility: hidden; }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form label {
+              cursor: pointer; }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form input[type="checkbox"] + label:before {
+              border: 2px solid #ced4da;
+              content: "\00a0";
+              display: inline-block;
+              height: 17px;
+              margin: 0px 7px 0 0;
+              vertical-align: middle;
+              width: 17px; }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form input[type="checkbox"]:checked + label:before {
+              background-color: #FF324D;
+              border-color: #FF324D;
+              color: white;
+              text-align: center;
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: '\f00c';
+              font-size: 11px; }
+            .page-modal .outside-modal .modal-dialog .modal-content .modal-body .modal-text .popup-content .check-form input[type="checkbox"]:checked + label:after {
+              font-weight: bold; }
+
+@use "fashion-1/banner-owl";
+#slide .carousel-caption {
+  padding-left: 1.875rem; }
 
 .faq {
   padding: 80px 0; }
@@ -3611,33 +3866,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 100%;
     text-transform: capitalize; }
     .subscribe .subscribe__content .subscribe__content-left {
-      padding: 0; }
+      padding: 0;
+      display: flex;
+      align-items: center; }
       .subscribe .subscribe__content .subscribe__content-left h3 {
+        padding: 0 15px;
+        margin: 0;
         font-weight: 700;
         color: white;
         font-size: 26px;
         font-family: 'Roboto', sans-serif; }
-    .subscribe .subscribe__content .subscribe__content-right {
-      padding-left: 30px;
-      padding-right: 0; }
-      .subscribe .subscribe__content .subscribe__content-right .form {
-        display: flex;
-        justify-content: flex-end;
-        padding-right: 0;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        line-height: 1.5; }
-        .subscribe .subscribe__content .subscribe__content-right .form input.form-control {
-          border-radius: none;
-          border: none;
-          height: 50px; }
-        .subscribe .subscribe__content .subscribe__content-right .form input::placeholder {
-          border-radius: none;
-          padding: 0 11px; }
-        .subscribe .subscribe__content .subscribe__content-right .form button {
-          border-radius: none;
-          font-size: 16px;
-          border: none; }
+    .subscribe .subscribe__content .subscribe__content-right .form {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      line-height: 1.5; }
+      .subscribe .subscribe__content .subscribe__content-right .form input.form-control {
+        border-radius: none;
+        border: none;
+        height: 50px; }
+      .subscribe .subscribe__content .subscribe__content-right .form input::placeholder {
+        border-radius: none;
+        padding: 0 11px; }
+      .subscribe .subscribe__content .subscribe__content-right .form button {
+        border-radius: none;
+        font-size: 16px;
+        border: none; }
     @media only screen and (max-width: 768px) {
       .subscribe .subscribe__content {
         flex-direction: column; }
@@ -3662,19 +3918,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       font-weight: 400;
       font-size: 14px;
       font-family: 'Poppins', sans-serif;
-      margin-bottom: 25px; }
-  .footer__main .footer__main-content .social__icons .icons__widgets li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 38px;
-    height: 39px;
-    display: inline-block;
-    padding: 0px 5px 5px 0; }
+      margin-bottom: 30px; }
+  .footer__main .footer__main-content .social__icons {
+    font-size: 16px;
+    line-height: 1.5; }
+    .footer__main .footer__main-content .social__icons .icons__widgets {
+      overflow: hidden; }
+      .footer__main .footer__main-content .social__icons .icons__widgets li {
+        float: left;
+        width: 41px;
+        height: 41px;
+        display: inline-block;
+        padding: 0px 5px 5px 0; }
+        .footer__main .footer__main-content .social__icons .icons__widgets li a {
+          font-size: 18px;
+          height: 100%;
+          width: 100%;
+          display: inline-block;
+          text-align: center; }
+          .footer__main .footer__main-content .social__icons .icons__widgets li a:hover {
+            color: #E94049; }
   .footer__main .useful__links {
     text-transform: capitalize;
     margin-bottom: 30px; }
     .footer__main .useful__links h6 {
+      color: white;
       font-weight: 600;
       letter-spacing: 0.3px;
       font-family: 'Roboto', sans-serif;
@@ -3690,10 +3958,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           color: white;
           font-weight: 400;
           line-height: 1.5; }
+          .footer__main .useful__links .useful__link-items li a:hover {
+            text-decoration: none;
+            color: #E94049; }
   .footer__main .category {
     text-transform: capitalize;
     margin-bottom: 30px; }
     .footer__main .category h6 {
+      color: white;
       font-weight: 600;
       letter-spacing: 0.3px;
       font-family: 'Roboto', sans-serif;
@@ -3709,6 +3981,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           color: white;
           font-weight: 400;
           line-height: 1.5; }
+          .footer__main .category .category__items li a:hover {
+            text-decoration: none;
+            color: #E94049; }
   .footer__main .my__account {
     text-transform: capitalize;
     margin-bottom: 30px; }
@@ -3716,6 +3991,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       .footer__main .my__account {
         margin-bottom: 0; } }
     .footer__main .my__account h6 {
+      color: white;
       font-weight: 600;
       letter-spacing: 0.3px;
       font-family: 'Roboto', sans-serif;
@@ -3731,11 +4007,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           color: white;
           font-weight: 400;
           line-height: 1.5; }
+          .footer__main .my__account .my__account-items li a:hover {
+            text-decoration: none;
+            color: #E94049; }
   .footer__main .contact__info {
     text-transform: capitalize;
     margin-bottom: 30px;
     line-height: 1.5; }
     .footer__main .contact__info h6 {
+      color: white;
       font-weight: 600;
       letter-spacing: 0.3px;
       font-family: 'Roboto', sans-serif;
@@ -3749,11 +4029,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         font-size: 14px;
         display: flex;
         margin-bottom: 15px; }
-        .footer__main .contact__info .contact__info-items li i {
+        .footer__main .contact__info .contact__info-items li span {
           font-size: 18px;
-          margin: 4px 10px 0 0; }
+          margin: 4px 15px 0 0; }
         .footer__main .contact__info .contact__info-items li a {
+          text-transform: lowercase;
           color: white; }
+          .footer__main .contact__info .contact__info-items li a:hover {
+            text-decoration: none;
+            color: #E94049; }
 
 .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -3790,17 +4074,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border-radius: 10px; }
     .contact-section .contact_style3 .contact-section__icon {
       border: 1px solid #FF324D;
-      margin: 0 0 5px;
+      margin: auto;
+      margin-bottom: 5px;
       height: 80px;
       width: 80px;
-      text-align: center;
-      display: block;
+      display: flex;
       overflow: hidden;
+      justify-content: center;
+      align-items: center;
       border-radius: 100%;
       position: relative;
       z-index: 1; }
       .contact-section .contact_style3 .contact-section__iconimg {
         line-height: 78px; }
+    .contact-section .contact_style3 .contact-section__icon:hover {
+      background-color: red; }
   .contact-section__text span {
     color: #333;
     font-weight: 600;

@@ -9,19 +9,24 @@
         border-radius: 10px;
         .contact-section__icon{
             border: 1px solid #FF324D;
-            margin: 0 0 5px;
+            margin:auto;
+            margin-bottom:5px;
             height: 80px;
             width: 80px;
-            text-align: center;
-            display: block;
+            display: flex;
             overflow: hidden;
+            justify-content:center;
+            align-items: center;
             border-radius: 100%;
             position: relative;
             z-index: 1;
             &img{
                 line-height: 78px;
             }
-           }
+        }
+        .contact-section__icon:hover { 
+            background-color:red;
+        }
         
     }
 

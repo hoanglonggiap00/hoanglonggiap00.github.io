@@ -1,0 +1,31 @@
+//-   ******************** Start Page Modal  *****************//
+
+.page-modal#my-modal
+    .container.outside-modal 
+        .modal-dialog.modal-lg
+            .modal-content 
+                button(class="close" id="close-btn")
+                    i(class="iconify" data-icon="ion-ios-close-empty" data-inline="false") 
+                .modal-body.row 
+                    .col-sm-5.background-div 
+                        .background-img
+                    .col-sm-7.modal-text 
+                        .popup-content 
+                            .heading 
+                                h4 Subscribe and Get 25% Discount!
+                                p Subscribe to the newsletter to receive updates about new products.
+                            .form
+                                .popup-form 
+                                    .form-group 
+                                        input(name="email" required type="email" class="form-control" placeholder="Enter Your Email")
+                                    .form-group 
+                                        button(class="btn btn-block popup-btn-subscribe text-uppercase" title="subscribe") Subscribe
+                            .check-form
+                                input(name="checkbox" type="checkbox" id="popup-checkbox")
+
+                                label( for="popup-checkbox" class="form-check-label") Don't show this popup again!
+
+
+
+
+//-   ******************** End Page Modal  *****************//
